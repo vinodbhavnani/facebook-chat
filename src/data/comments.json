@@ -1,0 +1,24 @@
+{
+  "comments": {
+    "comment_123": {
+      "id": "comment_123",
+      "parentId": null,
+      "authorId": "user_456",
+      "content": "This is a root comment with @john_doe tagged!",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "attachments": ["file_789"],
+      "reactions": {
+        "👍": ["user_456", "user_789"],
+        "❤️": ["user_123"]
+      },
+      "mentions": ["user_john"],
+      "isEdited": false,
+      "editedAt": null,
+      "replies": ["comment_124", "comment_125"]
+    }
+  },
+  "metadata": {
+    "totalComments": 15,
+    "lastUpdated": "2024-01-15T10:30:00Z"
+  }
+}

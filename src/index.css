@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 17% 95%;
+    --foreground: 210 11% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    --primary: 214 89% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 14% 93%;
+    --secondary-foreground: 210 11% 15%;
+
+    --muted: 210 14% 96%;
+    --muted-foreground: 210 8% 55%;
+
+    --accent: 214 89% 95%;
+    --accent-foreground: 214 89% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 18% 87%;
+    --input: 210 18% 87%;
+    --ring: 214 89% 52%;
+
+    --radius: 0.5rem;
+
+    --fb-hover: 210 14% 93%;
+    --fb-comment-bg: 210 17% 95%;
+    --fb-reaction-bg: 214 89% 95%;
+    --fb-mention: 214 89% 45%;
+    --fb-online: 142 71% 45%;
+    --fb-separator: 210 18% 90%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 11% 15%;
+    --foreground: 210 17% 95%;
+    --card: 210 11% 20%;
+    --card-foreground: 210 17% 95%;
+    --popover: 210 11% 20%;
+    --popover-foreground: 210 17% 95%;
+    --primary: 214 89% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 11% 25%;
+    --secondary-foreground: 210 17% 95%;
+    --muted: 210 11% 25%;
+    --muted-foreground: 210 8% 65%;
+    --accent: 214 50% 25%;
+    --accent-foreground: 214 89% 80%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 11% 28%;
+    --input: 210 11% 28%;
+    --ring: 214 89% 52%;
+    --fb-hover: 210 11% 25%;
+    --fb-comment-bg: 210 11% 22%;
+    --fb-reaction-bg: 214 50% 25%;
+    --fb-mention: 214 89% 65%;
+    --fb-online: 142 71% 45%;
+    --fb-separator: 210 11% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+}

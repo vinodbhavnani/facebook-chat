@@ -1,0 +1,12 @@
+{
+  "users": {
+    "user_456": {
+      "id": "user_456",
+      "username": "jane_smith",
+      "displayName": "Jane Smith",
+      "avatar": "avatars/jane_smith.jpg",
+      "isOnline": true,
+      "lastSeen": "2024-01-15T10:29:00Z"
+    }
+  }
+}

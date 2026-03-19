@@ -1,0 +1,19 @@
+{
+  "attachments": {
+    "file_789": {
+      "id": "file_789",
+      "filename": "screenshot.png",
+      "originalName": "Screenshot 2024-01-15.png",
+      "path": "uploads/images/screenshot.png",
+      "type": "image/png",
+      "size": 245760,
+      "uploadedBy": "user_456",
+      "uploadedAt": "2024-01-15T10:30:00Z",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "thumbnail": "uploads/thumbnails/screenshot_thumb.png"
+      }
+    }
+  }
+}
